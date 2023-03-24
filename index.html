@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Web Component</title>
+  </head>
+  <body>
+    <!--NAV-->
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="https://www.churchofjesuschrist.org/?lang=eng" target="_blank">LDS Website</a>
+      <a href="#contact-us">Contact</a>
+      <a href="https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng">About</a>
+    </div>
+
+    <!--SLIDESHOW-->
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+            <img src="images/concepcion-chile-temple.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="images/costa rica temple.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="images/haiti_temple_exterior.jpeg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="images/italia-temple.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="images/Quetzaltenango-Temple-South-side.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="images/salt-lake-temple.jpg" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/concepcion-chile-temple.jpg" style="width:100%" onclick="currentSlide(1)" alt="Concepcion Chile Temple">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/costa rica temple.jpg" style="width:100%" onclick="currentSlide(2)" alt="San Jose Costa Rica Temple">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/haiti_temple_exterior.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Haiti Temple">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/italia-temple.jpg" style="width:100%" onclick="currentSlide(4)" alt="Roma Italia Temple">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/Quetzaltenango-Temple-South-side.jpg" style="width:100%" onclick="currentSlide(5)" alt="Quetzaltenango Guatemala Temple">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/salt-lake-temple.jpg" style="width:100%" onclick="currentSlide(6)" alt="Salt Lake Temple">
+          </div>
+        </div>
+      </div>
+
+      <!--CONTACT US-->
+      <div id="contact-us">
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="Guatemala">Guatemala</option>
+            <option value="canada">Costa Rica</option>
+            <option value="usa">Haiti</option>
+            <option value="usa">Italia</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      <script src="assets/index.js"></script>
+  </body>
+</html>
